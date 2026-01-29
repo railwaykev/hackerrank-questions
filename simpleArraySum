@@ -1,0 +1,8 @@
+def simpleArraySum(ar):
+    sum = 0
+    for n in ar:
+        if n > 0 and n <= 1000:
+            sum += n
+        else:
+            return False
+    return sum
