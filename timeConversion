@@ -1,5 +1,5 @@
 def timeConversion(s):
-    period = s[-2:]
+    period = s[-2]
     hour = int(s[:2])
     rest = s[2:-2]
     
