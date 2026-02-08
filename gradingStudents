@@ -1,0 +1,8 @@
+def gradingStudents(grades):
+    newGrades = []
+    for n in grades:
+        if n < 38 or n % 5 < 3:
+            newGrades.append(n)
+        else:
+            newGrades.append(math.ceil(n / 5) * 5)
+    return newGrades
