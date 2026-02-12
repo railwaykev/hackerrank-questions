@@ -1,0 +1,8 @@
+def kangaroo(x1, v1, x2, v2):
+    if (v1 - v2) != 0:
+        pos = (x2-x1)
+        speed = (v1-v2)
+        jumps = pos/speed
+        if jumps >= 0 and pos % speed == 0:
+            return "YES" 
+    return "NO"
