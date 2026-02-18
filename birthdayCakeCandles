@@ -1,7 +1,10 @@
 def birthdayCakeCandles(candles):
-    count = 1
-    sortedList = sorted(candles, reverse=True)
-    for i in range(1, len(sortedList)):
-        if sortedList[0] == sortedList[i]:
+    count = 0
+    tallest = 0
+    for i in candles:
+        if i > tallest:
+            tallest = i
+            count = 1
+        elif i == tallest:
             count += 1
     return count
