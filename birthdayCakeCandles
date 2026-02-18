@@ -1,10 +1,2 @@
 def birthdayCakeCandles(candles):
-    count = 0
-    tallest = 0
-    for i in candles:
-        if i > tallest:
-            tallest = i
-            count = 1
-        elif i == tallest:
-            count += 1
-    return count
+    return candles.count(max(candles))
